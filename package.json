@@ -1,0 +1,26 @@
+{
+  "fitbit": {
+    "appUUID": "17924e11-ee8c-4df8-ad95-a38da22d3269",
+    "appType": "clockface",
+    "appDisplayName": "Pokebattle Fitbit",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_internet",
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location",
+      "run_background"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Pokebattle Fitbit"
+      }
+    }
+  }
+}
