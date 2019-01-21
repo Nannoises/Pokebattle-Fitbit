@@ -4,4 +4,8 @@ export function zeroPad(i) {
     i = "0" + i;
   }
   return i;
-}
+};
+
+export function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+};

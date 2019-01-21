@@ -1,18 +1,15 @@
-.background {
-  viewport-fill: white;
+/*Styles specific to the Ionic*/
+
+#allyHealthContainer{
+  x: 233; 
+  y: 153;
+  width: 97;
+  height: 7;  
 }
 
-#myLabel {
-  font-size: 60;
-  font-family: System-Bold;
-  text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 50%+140;
-  fill: white;
-}
-
-#spriteDiv {
-  width: 100%;
-  height: 100%;
+#enemyHealthContainer{
+  x: 42;
+  y: 37;
+  width: 100;
+  height: 7;  
 }

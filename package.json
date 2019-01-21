@@ -8,19 +8,20 @@
     "requestedPermissions": [
       "access_internet",
       "access_activity",
-      "access_user_profile",
-      "access_heart_rate",
-      "access_location",
-      "run_background"
+      "run_background",
+      "access_location"
     ],
     "buildTargets": [
-      "higgs",
-      "meson"
+      "meson",
+      "higgs"
     ],
     "i18n": {
       "en": {
         "name": "Pokebattle Fitbit"
       }
     }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~2.0.0"
   }
 }

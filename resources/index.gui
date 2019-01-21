@@ -1,10 +1,69 @@
 <svg class="background" id="root">
-  <image id="image" href="colorBackground.png" width="100%" height="100%"/>  
+  <image id="image" href="hiResBackground4.png" width="100%" height="100%"/>
+  <rect id="enemyHealthContainer" fill="lime"/>
+  <rect id="allyHealthContainer"  fill="lime"/>
   <svg id="spriteDiv">
-    <image id="sprite" x="160"/>
+    <image id="frontSprite" href="ball.png" width="24" height="24" x="220" y="50"/>
+    <image id="backSprite" href="ball.png" width="24" height="24" x="25" y="175"/>
   </svg>  
-  <svg class="time">
+  <svg id="time" class="time">
     <text id="myLabel" />
+    <image id="timeDigit0" class="timeDigit" x="11%" />
+    <image id="timeDigit1" class="timeDigit" x="28%" />
+    <image id="timeSeparator" href="font/colon.png" x="50%"/>
+    <image id="timeDigit2" class="timeDigit" x="60%" />
+    <image id="timeDigit3" class="timeDigit" x="77%" />
+  </svg>
+  <svg id="enemyNameContainer" class="nameContainer">
+    <text id="enemyName" text-length="16" x="0" y="20"/>
+    <image id="enemyNameChar0" x="1%"/>
+    <image id="enemyNameChar1" x="7%"/>
+    <image id="enemyNameChar2" x="13%"/>
+    <image id="enemyNameChar3" x="19%"/>
+    <image id="enemyNameChar4" x="25%"/>
+    <image id="enemyNameChar5" x="31%"/>
+    <image id="enemyNameChar6" x="37%"/>
+    <image id="enemyNameChar7" x="43%"/>
+    <image id="enemyNameChar8" x="49%"/>
+    <image id="enemyNameChar9" x="55%"/>
+    <image id="enemyNameChar10" x="61%"/>
+  </svg>
+  <svg id="enemyLevelContainer" class="levelContainer">
+    <image id="enemyLevelChar0" x="3%"/>
+    <image id="enemyLevelChar1" x="6%"/>
+    <image id="enemyLevelChar2" x="11%"/>
+    <image id="enemyLevelChar3" x="15%"/>
+    <image id="enemyLevelChar4" x="19%"/>
+  </svg>
+  <svg id="allyNameContainer" class="nameContainer">
+    <text id="allyName" text-length="16" x="140" y="200"/>
+    <image id="allyNameChar0" x="44%"/>
+    <image id="allyNameChar1" x="50%"/>
+    <image id="allyNameChar2" x="56%"/>
+    <image id="allyNameChar3" x="62%"/>
+    <image id="allyNameChar4" x="68%"/>
+    <image id="allyNameChar5" x="74%"/>
+    <image id="allyNameChar6" x="80%"/>
+    <image id="allyNameChar7" x="86%"/>
+    <image id="allyNameChar8" x="92%"/>
+    <image id="allyNameChar9" x="98%"/>
+  </svg>
+  <svg id="allyLevelContainer" class="levelContainer">
+    <image id="allyLevelChar0" x="58%"/>
+    <image id="allyLevelChar1" x="61%"/>
+    <image id="allyLevelChar2" x="66%"/>
+    <image id="allyLevelChar3" x="70%"/>
+    <image id="allyLevelChar4" x="74%"/>
+  </svg>
+  <svg id="dateContainer">
+    <image id="dateChar0" x="64%"/>
+    <image id="dateChar1" x="68%"/>
+    <image id="dateChar2" x="72%"/>
+    <image id="dateChar3" x="78%"/>
+    <image id="dateChar4" x="82%"/>
+    <image id="dateChar5" x="86%"/>
+    <image id="dateChar6" x="92%"/>
+    <image id="dateChar7" x="96%"/>    
   </svg>
 </svg>
 

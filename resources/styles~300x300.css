@@ -1,0 +1,15 @@
+/*Styles specific to the Versa*/
+
+#allyHealthContainer{
+  x: 203; 
+  y: 184;
+  width: 87;
+  height: 8;
+}
+
+#enemyHealthContainer{
+  x: 37;
+  y: 45;
+  width: 87;
+  height: 8;
+}
