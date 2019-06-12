@@ -161,8 +161,8 @@ function fetchNameCallBack(index, callBack) {
 };
 
 function fetchNewRandomPokemon(stepGoalMet){
-  var randomPoke1 = 668;
-  var randomPoke2 = 668;
+  var randomPoke1 = Math.floor(Math.random() * (NUMBER_OF_POKEMON));
+  var randomPoke2 = Math.floor(Math.random() * (NUMBER_OF_POKEMON));
   var allySpriteUrl = PokemonServiceDomain + "/getMostRecentBackSprite?SkipFormat=1&Index=" + randomPoke1;
   var enemySpriteUrl = PokemonServiceDomain + "/getMostRecentFrontSprite?SkipFormat=1&Index=" + randomPoke2;
   var allyShinySpriteUrl = PokemonServiceDomain + "/getMostRecentBackSpriteShiny?SkipFormat=1&Index=" + randomPoke1;
