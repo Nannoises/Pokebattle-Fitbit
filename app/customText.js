@@ -47,7 +47,7 @@ function santizeLetterName(letterName)
   switch(letterName)
     {
       case 'é':
-        return '201';
+        return 'e201';
       case '-':
         return 'hyp';
       case '?':
