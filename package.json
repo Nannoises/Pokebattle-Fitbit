@@ -1,4 +1,8 @@
 {
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.1",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
   "fitbit": {
     "appUUID": "17924e11-ee8c-4df8-ad95-a38da22d3269",
     "appType": "clockface",
@@ -12,22 +16,17 @@
       "access_location"
     ],
     "buildTargets": [
-      "meson",
-      "higgs",
-      "gemini",
-      "mira"
+      "vulcan",
+      "atlas"
     ],
     "i18n": {
-      "en": {
+      "en-US": {
         "name": "Pokebattle Fitbit"
       }
-    }
+    },
+    "defaultLanguage": "en-US"
   },
-  "devDependencies": {
-    "@fitbit/sdk": "~4.1.0",
-    "@fitbit/sdk-cli": "^1.7.0"
-  },
-  "dependencies": {
-    "npx": "^10.2.0"
+  "scripts": {
+    "build": "fitbit-build"
   }
 }
