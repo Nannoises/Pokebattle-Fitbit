@@ -37,7 +37,7 @@
 }
 
 #enemyNameContainer image {
-  y: 1%;  
+  y: 58;  
 }
 
 #allyNameContainer image {
@@ -54,7 +54,7 @@
 }
 
 #enemyLevelContainer image {
-  y: 9%;
+  y: 75;
 }
 
 #dateContainer image {

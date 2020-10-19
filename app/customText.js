@@ -3,7 +3,7 @@ const root = document.getElementById('root');
 const screenHeight = root.height;
 const screenWidth = root.width;
 const allyNameStartingPoint = screenWidth * 0.44;
-const enemyNameStartingPoint = screenWidth * 0.01;
+const enemyNameStartingPoint = screenWidth * 0.02;
 var slimCharacters = ["colon", "apo", "bang"];
 
 function setText(elementPrefix, name, checkSpecialSpacing, startingPoint)
