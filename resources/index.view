@@ -7,7 +7,6 @@
     <image id="backSprite" href="ball.png" width="24" height="24" x="75" y="150"/>
   </svg>  
   <svg id="time" class="time">
-    <text id="myLabel" />
     <image id="timeDigit0" class="timeDigit" x="11%" />
     <image id="timeDigit1" class="timeDigit" x="28%" />
     <image id="timeSeparator" href="font/colon.png" x="50%"/>
