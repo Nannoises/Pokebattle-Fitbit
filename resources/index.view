@@ -56,14 +56,14 @@
     <image id="allyLevelChar4" x="74%"/>
   </svg>
   <svg id="dateContainer">
-    <image id="dateChar0" x="64%"/>
-    <image id="dateChar1" x="68%"/>
-    <image id="dateChar2" x="72%"/>
-    <image id="dateChar3" x="78%"/>
-    <image id="dateChar4" x="82%"/>
-    <image id="dateChar5" x="86%"/>
-    <image id="dateChar6" x="92%"/>
-    <image id="dateChar7" x="96%"/>    
+    <image id="dateChar0" x="62%"/>
+    <image id="dateChar1" x="66%"/>
+    <image id="dateChar2" x="70%"/>
+    <image id="dateChar3" x="76%"/>
+    <image id="dateChar4" x="80%"/>
+    <image id="dateChar5" x="84%"/>
+    <image id="dateChar6" x="90%"/>
+    <image id="dateChar7" x="94%"/>    
   </svg>
 </svg>
 
