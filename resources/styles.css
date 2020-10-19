@@ -1,4 +1,67 @@
-/*Styles specific to the Ionic*/
+.background {
+  viewport-fill: white;
+}
+
+#myLabel {
+  font-size: 60;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+140;
+  fill: white;
+}
+
+#spriteDiv {
+  width: 100%;
+  height: 100%;
+}
+
+#time image {
+  y: 81%;
+}
+
+#time image.timeDigit {
+  width:15%;
+  height:15%;
+}
+
+#timeSeparator {
+  width: 5%;
+  height: 15%;
+}
+
+.nameContainer image {
+  width: 5%;
+  height: 5%;
+}
+
+#enemyNameContainer image {
+  y: 1%;  
+}
+
+#allyNameContainer image {
+  y: 50%;
+}
+
+.levelContainer image {
+  width: 4%;
+  height: 4%;
+}
+
+#allyLevelContainer image {
+  y: 56%;
+}
+
+#enemyLevelContainer image {
+  y: 9%;
+}
+
+#dateContainer image {
+  y: 68%;
+  width: 4%;
+  height: 4%;
+}
 
 #allyHealthContainer{
   x: 233; 
