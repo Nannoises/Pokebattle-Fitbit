@@ -263,7 +263,7 @@ function setBackSprite(fileName) {
     backSpriteElement.y = screenHeight - scaledHeight - (screenHeight * 0.236); //71 for versa
   }
   else{
-    var yOffset = screenHeight == 300 ? screenHeight * 0.143 : screenHeight * 0.125; //Different heights for Versa vs. Ionic. 
+    var yOffset = 63;
     backSpriteElement.y = screenHeight - scaledHeight - yOffset; 
   }
   var xOffset = 0;
