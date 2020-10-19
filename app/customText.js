@@ -2,9 +2,32 @@ import document from "document";
 const root = document.getElementById('root');
 const screenHeight = root.height;
 const screenWidth = root.width;
-const allyNameStartingPoint = screenWidth * 0.44;
+const allyNameLeftBound = screenWidth * 0.44;
+const allyNameStartingPoint = screenWidth * 0.577;
 const enemyNameStartingPoint = 10;
 var slimCharacters = ["colon", "apo", "bang"];
+
+function getAllyNameStartingPoint(name)
+{
+  if(!name) return allyNameLeftBound;
+  var nameWidth = 0;  
+  for(var i=0; i<name.length;i++){
+    var sanitizedLetterName = santizeLetterName(name[i]);
+    if(name[i] === ' '){
+      nameWidth += 0.02 * screenWidth; //space widths
+    } else if(slimCharacters.indexOf(sanitizedLetterName) > -1){
+      nameWidth += 0.03 * screenWidth; //slim char width
+    } else {
+      nameWidth += 0.06 * screenWidth; //standard 6% spacing
+    }
+  }
+
+  var overflow = (allyNameStartingPoint + nameWidth) - screenWidth;
+  if(overflow <= 0) return allyNameStartingPoint; //If no overflow, use target starting point.
+  var adjustedStartingPoint = allyNameStartingPoint - overflow;
+  if(adjustedStartingPoint > allyNameLeftBound) return adjustedStartingPoint; //If not past boundary, use adjusted.
+  return allyNameLeftBound; //Default to boundary. 
+}
 
 function setText(elementPrefix, name, checkSpecialSpacing, startingPoint)
 {
@@ -80,7 +103,8 @@ export function setEnemyLevel(level){
   setText('enemyLevelChar', 'lv' + level, false);  
 };
 export function setAllyName(name){
-  setText('allyNameChar', name, true, allyNameStartingPoint);
+  var startingPoint = getAllyNameStartingPoint(name);
+  setText('allyNameChar', name, true, startingPoint);
 };
 export function setEnemyName(name){
   setText('enemyNameChar', name, true, enemyNameStartingPoint);  
