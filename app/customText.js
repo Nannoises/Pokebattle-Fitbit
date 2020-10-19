@@ -2,7 +2,7 @@ import document from "document";
 const root = document.getElementById('root');
 const screenHeight = root.height;
 const screenWidth = root.width;
-const allyNameLeftBound = screenWidth * 0.44;
+const allyNameLeftBound = screenWidth * 0.40;
 const allyNameStartingPoint = screenWidth * 0.577;
 const enemyNameStartingPoint = 10;
 var slimCharacters = ["colon", "apo", "bang"];
