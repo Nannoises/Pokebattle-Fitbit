@@ -9,9 +9,9 @@
   <svg id="time" class="time">
     <image id="timeDigit0" class="timeDigit" x="11%" />
     <image id="timeDigit1" class="timeDigit" x="28%" />
-    <image id="timeSeparator" href="font/colon.png" x="50%"/>
-    <image id="timeDigit2" class="timeDigit" x="60%" />
-    <image id="timeDigit3" class="timeDigit" x="77%" />
+    <image id="timeSeparator" href="font/colon.png" x="160"/>
+    <image id="timeDigit2" class="timeDigit" x="57%" />
+    <image id="timeDigit3" class="timeDigit" x="74%" />
   </svg>
   <svg id="enemyNameContainer" class="nameContainer">
     <image id="enemyNameChar0"/>
