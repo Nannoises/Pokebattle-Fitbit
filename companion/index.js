@@ -147,22 +147,20 @@ function fetchName(key, index){
       sendMessage({"key": key, "newValue" : text });
   });
 };
-
-function fetchNameCallBack(index, callBack) {
-  var url = PokemonServiceDomain + `/pokemonName?Index=${index}`;
-  console.log("Fetching" + url);
-  fetch(url)
-  .then(response => response.text())
-  .then(text => {
-      if(callBack && typeof(callBack) == 'function'){
-        callBack();
-      }
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function testIndexRange(index, end)
+{
+  if(index == end) return;
+  sleep(5000).then(() => {
+    fetchNewRandomPokemon(false, index, index);
+    testIndexRange(index+1, end);
   });
-};
-
-function fetchNewRandomPokemon(stepGoalMet){
-  var randomPoke1 = Math.floor(Math.random() * (NUMBER_OF_POKEMON));
-  var randomPoke2 = Math.floor(Math.random() * (NUMBER_OF_POKEMON));
+}
+function fetchNewRandomPokemon(stepGoalMet, rand1, rand2){
+  var randomPoke1 = rand1 ?? Math.floor(Math.random() * (NUMBER_OF_POKEMON));
+  var randomPoke2 = rand2 ?? Math.floor(Math.random() * (NUMBER_OF_POKEMON));
   var allySpriteUrl = PokemonServiceDomain + "/getMostRecentBackSprite?SkipFormat=1&Index=" + randomPoke1;
   var enemySpriteUrl = PokemonServiceDomain + "/getMostRecentFrontSprite?SkipFormat=1&Index=" + randomPoke2;
   var allyShinySpriteUrl = PokemonServiceDomain + "/getMostRecentBackSpriteShiny?SkipFormat=1&Index=" + randomPoke1;
@@ -205,3 +203,5 @@ function getShinyFrontSprite(pokemonNumber){
   var enemyShinySpriteUrl = PokemonServiceDomain + "/getMostRecentFrontSpriteShiny?SkipFormat=1&Index=" + pokemonNumber;
   fetchSprite(enemyShinySpriteUrl, `shinyFrontSprite${pokemonNumber}.txi`);
 };
+
+testIndexRange(805,898);
