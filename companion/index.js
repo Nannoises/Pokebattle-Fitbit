@@ -5,7 +5,7 @@ import { Image } from "image";
 import { outbox } from "file-transfer";
 import * as weather from "./weather.js";
 
-const NUMBER_OF_POKEMON = 807;
+const NUMBER_OF_POKEMON = 898;
 const PokemonServiceDomain = "https://birdcloudbeta.herokuapp.com";
 var customSpriteCounter = settingsStorage.getItem("customSpriteCounter");
 if(!customSpriteCounter || customSpriteCounter < 1){
